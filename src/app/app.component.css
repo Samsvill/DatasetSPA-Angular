@@ -1,0 +1,4 @@
+.tableCards{
+    display: flex;
+    flex-wrap: wrap;
+}

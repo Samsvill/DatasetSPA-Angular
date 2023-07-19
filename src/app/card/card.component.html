@@ -1,9 +1,13 @@
-<div class="col-md-4 mb-5">
-    <div class="card h-100">
+<div class="col-md-4 mb-5" *ngFor="let datum of data">
+    <div class="card h-100" >
       <div class="card-body">
-        <h2 class="card-title"> {{name}} </h2>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam,
-          maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+        <h2 class="card-title" > {{datum.species}} </h2>
+        <p class="card-text">
+          petalLength: {{datum["petalLength"]}}
+        </p>
+        <p class="card-text">
+          petalWidth: {{datum["petalWidth"]}}
+        </p>
       </div>
       <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
     </div>
