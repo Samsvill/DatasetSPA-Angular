@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 //interfaz Flower
 import { Flower } from '../interfaces/flower';
@@ -16,11 +16,18 @@ import { IrisService } from '../providers/iris.service';
 export class CardComponent {
 
   public data: Flower[] = []
- name: string = 'card 1'; 
+  public setosa: Flower[] = [] 
+
+  @Input() species : string = '';
+  @Input() petalLength : string = '';
+  @Input() petalWidth : string = '';
+  
+
 
  ngOnInit(){
   this.dataProvider.getResponse().subscribe((response) => {
     this.data = (response as Flower[])
+    this.setosa = this.data.filter((flor)=> flor.species == 'setosa' )
   })
  }
  constructor(private dataProvider: IrisService){ }

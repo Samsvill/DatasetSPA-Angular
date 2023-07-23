@@ -7,12 +7,14 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { CardComponent } from './card/card.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { DataInfoComponent } from './data-info/data-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    CardComponent
+    CardComponent,
+    DataInfoComponent
   ],
   imports: [
     BrowserModule,

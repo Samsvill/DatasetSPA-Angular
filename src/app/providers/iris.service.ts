@@ -9,7 +9,6 @@ export class IrisService {
   private URL: string = 'https://irisfirebase-3379e-default-rtdb.firebaseio.com/collection.json'
   getResponse(){
     return this.http.get(this.URL);
-    
   }
   constructor(private http:HttpClient) { }
 }
