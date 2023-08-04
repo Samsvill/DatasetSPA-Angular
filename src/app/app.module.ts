@@ -8,13 +8,17 @@ import { CardComponent } from './card/card.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { DataInfoComponent } from './data-info/data-info.component';
+import { Card2Component } from './card2/card2.component';
+import { Card3Component } from './card3/card3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     CardComponent,
-    DataInfoComponent
+    DataInfoComponent,
+    Card2Component,
+    Card3Component
   ],
   imports: [
     BrowserModule,
