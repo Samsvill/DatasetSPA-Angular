@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DataInfoComponent } from './data-info/data-info.component';
 import { Card2Component } from './card2/card2.component';
 import { Card3Component } from './card3/card3.component';
+import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { Card3Component } from './card3/card3.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CanvasJSAngularChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
